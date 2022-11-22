@@ -260,12 +260,12 @@ void Bank::Transaction(){
             cin>>cash;
             if(cash>customer[i].cash){
                 cout<<"Your existing cash is just "<<customer[i].cash<<endl;
-                Sleep(3000);
+                Sleep(1000);
                 goto back;
             }
 
             customer[i].cash-=cash;
-            cout<<"Invalid input "<<endl;
+            cout<<"Your new cash is"<<customer[i].cash<<endl;
             break;
           }
    break;
